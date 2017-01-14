@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.6)
+project(cplusplus_practice)
+
+set(CMAKE_CXX_STANDARD 11)
+
+include_directories(language_features)
+set(SOURCE_FILES main.cpp language_features/curiously_recurring_template_pattern/CRTP_static_polymorphism.h language_features/curiously_recurring_template_pattern/CRTP_singleton.h language_features/d_pointer/d_pointer.h language_features/d_pointer/d_pointer_impl.h language_features/d_pointer/d_pointer.cpp)
+add_executable(cplusplus_practice ${SOURCE_FILES})
