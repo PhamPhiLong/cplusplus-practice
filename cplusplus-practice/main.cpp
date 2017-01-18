@@ -1,4 +1,4 @@
-#include "competitive_programming/invert_binary_search_tree.h"
+#include "competitive_programming/coin_change.h"
 
 int main() {
     run();
