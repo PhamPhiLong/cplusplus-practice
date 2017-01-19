@@ -1,4 +1,4 @@
-#include "competitive_programming/binary_gap.h"
+#include "competitive_programming/odd_occurrences_in_array.h"
 
 int main() {
     run();
