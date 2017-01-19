@@ -1,4 +1,4 @@
-#include "competitive_programming/coin_change.h"
+#include "competitive_programming/minimum_coin_change.h"
 
 int main() {
     run();
