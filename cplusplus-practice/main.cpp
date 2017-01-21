@@ -1,4 +1,4 @@
-#include "competitive_programming/missing_integer.h"
+#include "competitive_programming/min_max_division.h"
 
 int main() {
     run();
