@@ -1,4 +1,4 @@
-#include "competitive_programming/perm_missing_elem.h"
+#include "competitive_programming/missing_integer.h"
 
 int main() {
     run();
