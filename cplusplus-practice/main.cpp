@@ -1,4 +1,6 @@
-#include "competitive_programming/min_max_division.h"
+
+
+#include "competitive_programming/array_string/palindrome_permutation.h"
 
 int main() {
     run();
