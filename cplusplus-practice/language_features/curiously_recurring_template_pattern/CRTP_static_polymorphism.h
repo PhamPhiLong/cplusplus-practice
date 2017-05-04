@@ -11,19 +11,19 @@
 namespace {
     template<typename T>
     struct Base {
-        virtual void foo() const {
+        void foo() const {
             static_cast<const T*>(this)->foo();
         }
     };
 
     struct Derived1 : public Base<Derived1> {
-        void foo() const override {
+        void foo() const {
             std::cout << "derrived1 class" << std::endl;
         }
     };
 
     struct Derived2 : public Base<Derived2> {
-        void foo() const override {
+        void foo() const {
             std::cout << "derrived2 class" << std::endl;
         }
     };
