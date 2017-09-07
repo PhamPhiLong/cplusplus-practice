@@ -15,7 +15,7 @@ namespace {
     struct node {
         T value;
         shared_ptr<node<T>> next_node;
-        node(T value, shared_ptr<node<T>> next_node) : value{value}, next_node{next_node} {}
+        node(T value, shared_ptr<node<T>> next_node) : value{move(value)}, next_node{move(next_node)} {}
     };
 
     template <typename T>

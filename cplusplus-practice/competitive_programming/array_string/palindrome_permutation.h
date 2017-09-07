@@ -49,7 +49,8 @@ namespace {
         str = "acb bca";
         cout << str << " : " << (palindrome_permutation(str) ? "is palindrome permutation" : "is not palindrome permutation") << endl;
 
-        str = "acbbcadd";
+        str = "acbbcadd"
+                "";
         cout << str << " : " << (palindrome_permutation(str) ? "is palindrome permutation" : "is not palindrome permutation") << endl;
     }
 }

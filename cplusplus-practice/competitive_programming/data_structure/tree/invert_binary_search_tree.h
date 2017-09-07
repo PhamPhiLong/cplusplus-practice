@@ -20,7 +20,7 @@ namespace {
         T value;
 
         Node(std::shared_ptr<Node<T>> left, std::shared_ptr<Node<T>> right, T value)
-        : left{left}, right{right}, value{value} {}
+        : left{move(left)}, right{move(right)}, value{std::move(value)} {}
     };
 
     template <typename T>
@@ -39,9 +39,7 @@ namespace {
     template <typename T>
     void invert_binary_search_tree(std::shared_ptr<Node<T>> root) {
         if (root == nullptr) { return; }
-        auto temp = root->right;
-        root->right = root->left;
-        root->left = temp;
+        swap(root->right, root->left);
         invert_binary_search_tree(root->left);
         invert_binary_search_tree(root->right);
     }

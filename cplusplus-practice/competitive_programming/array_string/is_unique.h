@@ -18,7 +18,7 @@ namespace {
     bool is_unique(string str) {
         sort(begin(str), end(str));
         for (auto it = str.begin(); it != str.end();) {
-            auto next_it = it + 1;
+            auto next_it = next(it);
             if (next_it == str.end()) break;
             if (*it == *next_it) return false;
             it = next_it;
