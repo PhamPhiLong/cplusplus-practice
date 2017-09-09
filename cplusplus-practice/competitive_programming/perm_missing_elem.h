@@ -26,15 +26,11 @@
 
 #include <vector>
 #include <iostream>
+#include <numeric>
 
 namespace  {
     int perm_missing_elem(std::vector<int> &A) {
-        long sum{0};
-
-        for (auto num : A) {
-            sum += num;
-        }
-
+        auto sum = std::accumulate(A.begin(), A.end(), 0);
         long N = A.size();
         return (1 + N+1) * (N+1) / 2 - sum;
     }
